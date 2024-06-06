@@ -2785,7 +2785,7 @@ class GrismFLT(object):
 
         # self.direct.data['ERR'] *= 0.
         # self.direct.data['DQ'] *= 0
-        self.direct.ABZP = (0*np.log10(self.direct.ref_photflam) - 21.10 -
+        self.direct.ABZP = (-2.5*np.log10(self.direct.ref_photflam) - 21.10 -
                       5*np.log10(self.direct.ref_photplam) + 18.6921)
 
         self.direct.thumb_extension = 'REF'
